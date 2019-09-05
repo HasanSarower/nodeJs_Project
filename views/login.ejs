@@ -1,0 +1,42 @@
+<% include template/header %>
+<html>
+<form method="post">
+   
+	<table width="80%" height="60%" align="center" cellspacing="0" cellpadding="10" border="1" bgcolor="white">
+			<td>
+				<table align="center" border="1" cellpadding="10" cellspacing="0" width="70%" height="90%" border = "0">
+				<fieldset>
+                	<b> <%= msg %> </b>
+                </ul>
+                </fieldset><br>
+					<tr>
+						<td height="60" colspan="2"><b>LOGIN:</b></td>
+					</tr>
+					<tr>
+						<td>
+							<table border="0" cellpadding="10" cellspacing="15" width="60%" height="60%">
+								<tr>
+									<td>Username:</td>
+									<td><input type="text" name="username" /></td>
+								</tr>
+								<tr>
+									<td>Password:</td>
+									<td><input type="text" name="password" /></td>
+								</tr>
+								<tr>
+									<td colspan="2"><input name="remember" type="checkbox">Remember Me</td>
+								</tr>
+								<tr>
+									<td><input type="submit" value="Submit"></td>
+        							<td><a href="forgot_password.html">Forgot Password?</a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>
+</html>
+<% include template/footer %>
